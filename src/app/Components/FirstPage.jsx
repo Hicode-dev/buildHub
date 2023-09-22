@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-// import background from "../../../../public/build_hub-Landing.png"
+import Button from "./Button";
 
 const FirstPage = () => {
   return (
@@ -14,12 +14,9 @@ const FirstPage = () => {
           create impactful projects and elevate your portfolio
         </p>
         <div className="flex items-center justify-center mt-3">
-          <button className="bg-black text-white rounded-2xl py-2 px-5">
-            Join Waitlist{" "}
-          </button>
-          <button className="bg-transparent border mx-4 border-gray-800 rounded-2xl py-2 px-5 ">
-            Learn More{" "}
-          </button>
+          <Button className="bg-black text-white rounded-2xl py-2 px-5" text="Join Waitlist"/>
+          <Button className="bg-transparent border mx-4 border-gray-800 rounded-2xl py-2 px-5" text="Learn More"/>
+        
         </div>
       </div>
     </div>
