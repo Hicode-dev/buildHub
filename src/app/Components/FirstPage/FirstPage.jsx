@@ -5,11 +5,11 @@ import Image from "next/image";
 const FirstPage = () => {
   return (
     <div class="background">
-      <div className="d-flex items-center justify-center flex-col w-[50%] mx-auto pt-16">
-        <h1 className="text-5xl font-semibold text-center mt-5">
+      <div className="d-flex items-center justify-center flex-col mx-auto pt-16">
+        <h1 className="text-5xl font-semibold text-center leading-[48px] md:text-[40px] mt-5">
           Let’s Help You <br /> Start Out In Tech
         </h1>
-        <p className="text-md text-center mt-1" >
+        <p className="text-md text-center my-4 max-w-[500px] mx-auto" >
           Buildbubb helps in Connecting developers and designers to help you
           create impactful projects and elevate your portfolio
         </p>
