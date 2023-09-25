@@ -10,3 +10,10 @@
   background-repeat: no-repeat;
 }
 
+.loader{
+  background-image: url(../../public/loader.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
