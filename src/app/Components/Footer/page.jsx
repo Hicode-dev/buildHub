@@ -4,7 +4,7 @@ import {BsFacebook} from "react-icons/bs"
 
 const Footer = () => {
     return (
-        <div className='bg-[#EDE9FC] pt-16 pb-8 '>
+        <div className='bg-[#EDE9FC] dark:bg-[#3F4C7C]  dark:text-white pt-16 pb-8 '>
             <div className='w-full md:w-[85%] mx-auto text-center'>
                 <h1 className='text-center font-bold text-3xl'>Get Started Today</h1>
                 <p className='text-md md:w-[70%] mx-auto my-3 text-center'>Stay connected with fellow learners and instructors by suscribing to our newsletter.

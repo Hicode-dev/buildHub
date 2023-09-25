@@ -1,6 +1,8 @@
 import './globals.css'
 import {Figtree} from 'next/font/google'
 import Navbar from './Components/Navbar/Navbar'
+import { Layout } from 'antd/lib'
+import Footer from './Components/Footer/page'
 
 
 
@@ -17,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={figtree.className}>
         <Navbar />
         {children}
+       <Footer />
         </body>
     </html>
   )

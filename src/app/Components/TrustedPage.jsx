@@ -6,8 +6,8 @@ import MultipleItems from "./Slider";
 
 const TrustedPage = () => {
   return (
-    <div>
-      <div className="w-100 h-[100%] bg-[#EDE9FC] rounded-xl shadow-lg px-5 pt-5 pb-16 mb-6">
+    <div className="dark:bg-[#3F4C7C]  dark:text-white">
+      <div className="w-100 h-[100%] dark:bg-[#3F4C7C]  dark:text-white bg-[#EDE9FC] rounded-xl shadow-lg px-5 pt-5 pb-16 mb-6">
         <div className="text-center ">
           <h1 className="text-4xl font-bold p-5  text-center ">
             Trusted by over 1000 <br /> happy applicants

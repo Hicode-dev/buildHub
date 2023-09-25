@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='w-full h-16 hidden md:flex  flex items-center justify-between py-8 px-16 dark:bg-[#1D243C] dark:text-white'>
+      <div className='w-full h-16 hidden md:flex  shadow-lg items-center justify-between py-8 px-16 dark:bg-[#1D243C] dark:text-white'>
         <Image src={Logo} className='w-[9%]' alt='logo' />
         <ul className='flex items-center justify-between'>
           <li className='p-4 '>Home</li>

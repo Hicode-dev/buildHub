@@ -4,7 +4,7 @@ import FaqCards from './FaqCards'
 
 const FAQS = () => {
     return (
-        <div className='my-20'>
+        <div className='py-20'>
             <div className='text-center '>
                 <h2 className='font-[400] text-lg'>FAQs</h2>
                 <h2 className='font-bold text-3xl'>Frequently asked questions</h2>

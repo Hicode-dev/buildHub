@@ -23,7 +23,6 @@ const page = () => {
         <TrustedPage />
         <FAQS />
       </div>
-      <Footer/>
     </div>
   );
 };
