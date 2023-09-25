@@ -25,5 +25,5 @@ const SideCard = ({title,value,imageSrc}) => {
         </div>
       );
 }
-
+}
 export default SideCard

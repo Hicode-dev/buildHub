@@ -11,6 +11,7 @@ export default class SimpleSlider extends Component {
       speed: 600,
       slidesToShow: 4,
       slidesToScroll: 1
+      
     };
     return (
       <div className="mt-3">

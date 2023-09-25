@@ -7,7 +7,7 @@ const FirstPage = () => {
 
     <div class="background">
       <div className="d-flex items-center justify-center  flex-col mx-auto pt-16">
-        <h1 className="text-5xl font-semibold text-center leading-[48px] md:text-[40px] mt-24 md:mt-5">
+        <h1 className="text-5xl font-semibold text-center leading-[48px] md:text-[40px] mt-24 md:mt-5 " />
 
     <div class="background dark:bg-black dark:text-black">
       <div className="d-flex items-center justify-center flex-col mx-auto pt-16">
@@ -26,7 +26,11 @@ const FirstPage = () => {
         </div>
       </div>
     </div>
+    </div>
+    </div>
+    
   );
+  
 };
 
 export default FirstPage;

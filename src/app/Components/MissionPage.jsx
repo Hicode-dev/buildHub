@@ -13,7 +13,7 @@ const MissionPage = () => {
           <p className="text-lg font-semibold">
             At Buildhubb, we are committed to:
           </p>
-          <p className="text-gray-800 text-md">
+          <p className="text-gray-800 text-md" />
 
           <h1 className='font-semibold md:text-[40px]'>Mission</h1>
           <p className='leading-[
