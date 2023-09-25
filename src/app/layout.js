@@ -1,5 +1,5 @@
 import './globals.css'
-import {Poppins} from 'next/font/google'
+import {Figtree} from 'next/font/google'
 import Navbar from './Components/Navbar/Navbar'
 
 
