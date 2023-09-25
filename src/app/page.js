@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import FirstPage from "./Components/FirstPage";
 import SecondPage from "./Components/SecondPage";
@@ -9,7 +10,7 @@ const page = () => {
   return (
     <div className="p">
       <FirstPage />
-      <div className="px-14">
+      <div className="md:px-14 px-8 dark:bg-[#151929] dark:text-white">
         <SecondPage />
         <ThirdBanner />
         <FourthBanner />

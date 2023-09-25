@@ -2,7 +2,7 @@ import React from 'react'
 
 const MissionCard = ({svg, title, text, className}) => {
   return (
-    <div className={className}>
+    <div className={`${className} dark:bg-[#151929] dark:text-white`}>
         <div>
             {svg}
         </div>

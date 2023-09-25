@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const FirstPage = () => {
   return (
-    <div class="background">
+    <div class="background dark:bg-black dark:text-black">
       <div className="d-flex items-center justify-center flex-col mx-auto pt-16">
         <h1 className="text-5xl font-semibold text-center leading-[48px] md:text-[40px] mt-5">
           Let’s Help You <br /> Start Out In Tech

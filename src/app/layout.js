@@ -1,9 +1,10 @@
 import './globals.css'
-import {Figtree} from 'next/font/google'
+import { Poppins } from 'next/font/google'
+
+// Import other dependencies as needed
 import Navbar from './Components/Navbar/Navbar'
 
-
-const figtree = Figtree({ subsets: ['latin'] })
+const poppins = Poppins({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,11 +13,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" >
-      <body className={figtree.className}>
+    <html lang="en">
+      <body className={poppins.className}>
         <Navbar />
         {children}
-        </body>
+      </body>
     </html>
   )
 }
