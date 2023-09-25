@@ -2,7 +2,7 @@ import React from 'react'
 
 const VissionCard = ({title,value,imageSrc,valuee}) => {
   return (
-    <div className=" py-4 shadow-xl rounded-md px-4 gap-6">
+    <div className=" py-4 shadow-xl rounded-md px-4 gap-6 dark:bg-[#151929] dark:text-white">
          <img src={imageSrc} alt="" />
     <div className='py-4'>
     <h1 className="md:text-[24px] font-bold">{value}</h1>

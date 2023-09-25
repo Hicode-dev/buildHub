@@ -8,11 +8,18 @@ const MissionPage = () => {
     <div>
       <div className="grid md:flex justify-between items-center">
         <div>
+
           <h1 className="text-2xl font-bold">Mission</h1>
           <p className="text-lg font-semibold">
             At Buildhubb, we are committed to:
           </p>
           <p className="text-gray-800 text-md">
+
+          <h1 className='font-semibold md:text-[40px]'>Mission</h1>
+          <p className='leading-[
+28.8px] text-[20px]x1 py-4'>At Buildhubb, we are committed to:</p>
+          <p>
+
             - Empower individuals to discover their path in the tech <br />{" "}
             industry <br /> - Teach in-demand tech skills through structured
             learning <br /> programs <br /> - Foster vibrant tech communities

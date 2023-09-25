@@ -1,6 +1,21 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Regular (400) */
+.font-Poppins-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+/* Bold (700) */
+.font-Poppins-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
 
 .background{
   width: 100%;
