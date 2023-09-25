@@ -7,10 +7,11 @@ import Carreers from "./Components/Carreers";
 import MissionPage from "./Components/MissionPage";
 import TrustedPage from "./Components/TrustedPage";
 import FAQS from "./Components/FAQ/page";
+import Footer from "./Components/Footer/page";
 
 const page = () => {
   return (
-    <div className="p">
+    <div className="">
       <FirstPage />
       <div className="px-14">
         <SecondPage />
@@ -21,6 +22,7 @@ const page = () => {
         <TrustedPage />
         <FAQS />
       </div>
+      <Footer/>
     </div>
   );
 };
