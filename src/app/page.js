@@ -5,7 +5,9 @@ import ThirdBanner from "./Components/ThirdBanner/page";
 import FourthBanner from "./Components/FourthBanner/page";
 import Carreers from "./Components/Carreers";
 import MissionPage from "./Components/MissionPage";
-import TrustedPage from "./Components/TrustedPage"
+import TrustedPage from "./Components/TrustedPage";
+import FAQS from "./Components/FAQ/page";
+
 const page = () => {
   return (
     <div className="p">
@@ -16,7 +18,8 @@ const page = () => {
         <FourthBanner />
         <Carreers />
         <MissionPage />
-       <TrustedPage/>
+        <TrustedPage />
+        <FAQS />
       </div>
     </div>
   );
