@@ -1,6 +1,12 @@
 import './globals.css'
+import { Inter } from 'next/font/google'
+import Navbar from './Components/Navbar'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import {Figtree} from 'next/font/google'
 import Navbar from './Components/Navbar/Navbar'
+
 
 
 const figtree = Figtree({ subsets: ['latin'] })

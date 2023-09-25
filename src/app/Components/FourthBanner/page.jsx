@@ -4,8 +4,13 @@ import Carreers from "../Carreers";
 
 const page = () => {
   return (
+
+    <div className="grid md:grid-cols-2 pt-24 items-center">
+      <div className="grid grid-cols-2 gap-6 max-w-[500px]">
+
     <div className="grid md:grid-cols-2 h-50 py-32 items-center">
       <div className="grid md:grid-cols-2 w-fit gap-6 max-w-[100vw] md:max-w-[500px] ">
+
         <VissionCard
           value="100+"
           valuee="Applicants"
