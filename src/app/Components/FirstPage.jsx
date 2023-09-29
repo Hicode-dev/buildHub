@@ -14,7 +14,24 @@ const FirstPage = () => {
   }, []);
 
   return (
-    <div className="background dark:bg-black dark:text-black">
+    <div className="background relative dark:bg-[#151929] dark:text-white">
+   
+    <div className="background relative dark:bg-[#151929] dark:text-white">
+      <div className="absolute bottom-[100]">
+      <Image src='/Ellipse 14 (1).png' width='600' height='600' alt="pop" />
+      <div className="absolute bottom-0 ">
+      <Image src='/Ellipse 17 (2).png' width='1200' height='1220' alt="pop" />
+
+      </div>
+      </div>
+
+      <div className="absolute right-0 bottom-[100]">
+      <Image src='/Ellipse 16.png' width='600' height='600' alt="pop" />
+      <div className="absolute right-0 bottom-0 ">
+      <Image src='/Ellipse 15.png' width='1200' height='1220' alt="pop" />
+
+      </div>
+      </div>
       <div
         className="d-flex items-center p-8 justify-center flex-col mx-auto"
         data-aos="fade"
@@ -30,7 +47,7 @@ const FirstPage = () => {
           <Button className="bg-black text-white rounded-2xl py-2 px-5" text="Join Waitlist" data-aos="zoom-in" />
           <Button className="bg-transparent border mx-4 border-gray-800 rounded-2xl py-2 px-5" text="Learn More" data-aos="zoom-in" />
         </div>
-        <div className="w-full py-6 md:py-0 md:h-screen flex justify-center items-center">
+        <div className="w-full py-6 md:py-10  flex justify-center items-center">
       <iframe
         width="560"
         height="315"
@@ -43,6 +60,7 @@ const FirstPage = () => {
     </div>
 
       </div>
+    </div>
     </div>
   );
 };

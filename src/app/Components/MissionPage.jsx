@@ -1,33 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SideCard from "./SIdeCard";
 import MissionCard from "./MissionCard";
 import Button from "./Button";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const MissionPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Set the duration (in milliseconds) for animations
+      easing: "ease-out-back", // Use a smooth easing function (optional)
+    });
+  }, []);
+
   return (
     <div>
-      <div className="grid md:flex justify-between items-center">
+      <div className="grid md:flex justify-between items-center" data-aos="fade">
         <div>
-
-
           <p className="text-gray-800 text-md" />
 
-          <h1 className='font-semibold md:text-[40px]'>Mission</h1>
-          <p className='leading-[
-28.8px] text-[24px]x1 py-4'>At Buildhubb, we are committed to:</p>
-
-            <p> Empower individuals to discover their path in the tech industry</p>
-            <p>  Teach in-demand tech skills through structured learning programs </p>
-            <p>Foster vibrant tech communities for networking and knowledge sharing</p>
-            <p> Connect
-            professionals to build their portfolios by collaborating on full-stack projects  </p>
-            <p> Support startups in building products and assembling high- <br /> performing teams</p>
-            <p> Serve as a trusted platform for talent acquisition in the tech industry</p>
+          <h1 className="font-semibold md:text-[40px]" data-aos="fade">
+            Mission
+          </h1>
+          <p className="leading-[28.8px] text-[24px]x1 py-4" data-aos="fade">
+            At Buildhubb, we are committed to:
+          </p>
+          <p data-aos="fade-up">Empower individuals to discover their path in the tech industry</p>
+          <p data-aos="fade-up">Teach in-demand tech skills through structured learning programs</p>
+          <p data-aos="fade-up">Foster vibrant tech communities for networking and knowledge sharing</p>
+          <p data-aos="fade-up">Connect professionals to build their portfolios by collaborating on full-stack projects</p>
+          <p data-aos="fade-up">Support startups in building products and assembling high-performing teams</p>
+          <p data-aos="fade-up">Serve as a trusted platform for talent acquisition in the tech industry</p>
         </div>
         <div>
           <div>
             <MissionCard
-              className="shadow-lg bg-white rounded-xl flex items-center p-5 my-5 w-[90%] "
+              className="shadow-lg bg-white rounded-xl flex items-center p-5 my-5 w-[90%]"
               svg={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +49,7 @@ const MissionPage = () => {
                     cy="24"
                     r="24"
                     fill="#7BDCB5"
-                    fill-opacity="0.141176"
+                    fillOpacity="0.141176"
                   />
                   <path
                     d="M29 12H20C18.35 12 17 13.35 17 15V33C17 34.65 18.35 36 20 36H29C30.65 36 32 34.65 32 33V15C32 13.35 30.65 12 29 12ZM29.75 33C29.75 33.45 29.45 33.75 29 33.75H20C19.55 33.75 19.25 33.45 19.25 33V15C19.25 14.55 19.55 14.25 20 14.25H29C29.45 14.25 29.75 14.55 29.75 15V33ZM23 32.25H26V30H23V32.25Z"
@@ -50,7 +58,7 @@ const MissionPage = () => {
                 </svg>
               }
               title="Responsive Syncing"
-              text="Sync with others on a Go!"
+              text="Sync with others on the Go!"
             />
             <MissionCard
               className="shadow-lg bg-white rounded-xl flex items-center p-5 my-5 w-[90%] mx-[-50px]"
@@ -67,11 +75,11 @@ const MissionPage = () => {
                     cy="24"
                     r="24"
                     fill="#5637F0"
-                    fill-opacity="0.219608"
+                    fillOpacity="0.219608"
                   />
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M34.3333 22.3333H36V19.2227L34.5 13H13.5L12 19.2227V22.3333H13.6667V34H34.3333V22.3333ZM32.3333 22.3333H15.6667V32H21.3333V25H26.6667V32H32.3333V22.3333ZM25 15H27.756L28.404 19.32L28.4413 20.3333H25V15ZM20.244 15H23V20.3333H19.5587L19.596 19.32L20.244 15ZM30.3973 19.1333L29.7787 15H32.9253L34 19.46V20.3333H30.4427L30.3973 19.1333ZM18.2213 15H15.0747L14 19.46V20.3333H17.5573L17.6027 19.1333L18.2213 15Z"
                     fill="#573EF7"
                   />
@@ -81,7 +89,7 @@ const MissionPage = () => {
               text="Nice portfolios will increase your chances of making it Big"
             />
             <MissionCard
-              className="shadow-lg bg-white rounded-xl flex items-center p-5 my-5 w-[90%] "
+              className="shadow-lg bg-white rounded-xl flex items-center p-5 my-5 w-[90%]"
               svg={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +103,7 @@ const MissionPage = () => {
                     cy="24"
                     r="24"
                     fill="#F300DE"
-                    fill-opacity="0.141176"
+                    fillOpacity="0.141176"
                   />
                   <path
                     d="M22.4 12H24.8V36H22.4V12ZM14 20H16.4V36H14V20ZM33.2 26.4H30.8V36H33.2V26.4Z"
@@ -112,7 +120,7 @@ const MissionPage = () => {
       <div className="text-center py-24">
         <Button
           className="mx-4 bg-black text-white rounded-3xl py-2 px-5"
-          text="Suscribe to Premium"
+          text="Subscribe to Premium"
         />
       </div>
     </div>
