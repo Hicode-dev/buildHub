@@ -46,20 +46,29 @@ const Forms = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+  
     try {
+      const countrySelect = document.getElementById("countries");
+      const employmentStatusSelect = document.getElementById("employment-status");
+      const skillSelect = document.getElementById("skills");
+  
+      const country = countrySelect.options[countrySelect.selectedIndex].text;
+      const employmentStatus = employmentStatusSelect.options[employmentStatusSelect.selectedIndex].text;
+      const skillToLearn = skillSelect.options[skillSelect.selectedIndex].text;
+  
       const response = await fetch("https://techxmail.onrender.com/sendmail", {
         method: "POST",
         body: JSON.stringify({
           name: fullname,
           mail: "kingdavies2021@gmail.com",
-          text: `Message : ${message} \n Email: ${email} \n Fullname: ${fullname} \n Company Name: ${companyName} \n Phone Number: ${phoneNumber}`,
-          subject: "Someone sent a message on Ivara's portfolio",
+          text: `Message : ${message} \n Email: ${email} \n Fullname: ${fullname} \n Company Name: ${companyName} \n Phone Number: ${phoneNumber} \n Country: ${country} \n Employment Status: ${employmentStatus} \n Skill to Learn: ${skillToLearn}`,
+          subject: " someone signed up on buildhuib waitlist ",
         }),
         headers: {
           "Content-Type": "application/json",
         },
       });
-
+  
       if (response.ok) {
         setFullname("");
         setEmail("");
@@ -68,7 +77,7 @@ const Forms = () => {
         setMessage("");
         openNotification("topRight");
       } else {
-        alert("Failed to send message. Please try again later.");
+        alert("Failed to send the message. Please try again later.");
       }
     } catch (error) {
       alert("Something went wrong!");
@@ -76,6 +85,7 @@ const Forms = () => {
       setLoading(false);
     }
   };
+  
 
   return (
     <div className="block rounded-lg md:px-[2rem]">
@@ -106,7 +116,8 @@ const Forms = () => {
           <label className="block  mb-2 text-black outline-none">
 
 country          </label>
-          <select id="countries" className="outline-none reselect focus-within:border-[#8c1ae6] py-3 rounded-md bg-[#cec7d24b]">
+          <select id="countries"
+            className="select-field outline-none reselect focus-within:border-[#8c1ae6] py-3 rounded-md bg-[#cec7d24b]">
             <option className="">Choose a country</option>
             <option value="US">United States</option>
             <option value="CA">Canada</option>
@@ -117,23 +128,27 @@ country          </label>
           <label className="block mb-2 pt-6 text-black outline-none">
 
           Employment status         </label>
-          <select id="countries" className="outline-none reselect focus-within:border-[#8c1ae6] py-3 rounded-md bg-[#cec7d24b]">
-            <option className="">Choose a country</option>
-            <option value="US">United States</option>
-            <option value="CA">Canada</option>
-            <option value="FR">France</option>
-            <option value="DE">Germany</option>
+          <select  id="employment-status"
+            className="select-field outline-none reselect focus-within:border-[#8c1ae6] py-3 rounded-md bg-[#cec7d24b]">
+            <option className="">Unemployed</option>
+            <option value="US">Employed</option>
+            <option value="CA">Student</option>
+            <option value="FR">Rather not say</option>
           </select>
 
           <label className="block mb-2 text-black outline-none pt-6">
 
           What skill do you want to learn?</label>
-          <select id="countries" className="outline-none reselect focus-within:border-[#8c1ae6] py-3 rounded-md bg-[#cec7d24b]">
-            <option className="">Choose a country</option>
-            <option value="US">United States</option>
-            <option value="CA">Canada</option>
-            <option value="FR">France</option>
-            <option value="DE">Germany</option>
+          <select   id="skills"
+            className="select-field outline-none reselect focus-within:border-[#8c1ae6] py-3 rounded-md bg-[#cec7d24b]">
+            <option className="">Frontend Development</option>
+            <option value="US">Backend Development</option>
+            <option value="CA">Product Management</option>
+            <option value="FR">project Management</option>
+            <option value="DE">Digital Marketing </option>
+            <option value="DE">product Design </option>
+            <option value="DE">Tecnical Writers </option>
+            <option value="DE">Cyber security </option>
           </select>
 
 

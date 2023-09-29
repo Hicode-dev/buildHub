@@ -14,18 +14,15 @@ const MissionPage = () => {
 
           <h1 className='font-semibold md:text-[40px]'>Mission</h1>
           <p className='leading-[
-28.8px] text-[20px]x1 py-4'>At Buildhubb, we are committed to:</p>
-          <p>
+28.8px] text-[24px]x1 py-4'>At Buildhubb, we are committed to:</p>
 
-            - Empower individuals to discover their path in the tech <br />{" "}
-            industry <br /> - Teach in-demand tech skills through structured
-            learning <br /> programs <br /> - Foster vibrant tech communities
-            for networking and <br /> knowledge sharing <br /> - Connect
-            professionals to build their portfolios by <br /> collaborating on
-            full-stack projects <br /> - Support startups in building products
-            and assembling high- <br /> performing teams <br /> - Serve as a
-            trusted platform for talent acquisition in the tech <br /> industry
-          </p>
+            <p> Empower individuals to discover their path in the tech industry</p>
+            <p>  Teach in-demand tech skills through structured learning programs </p>
+            <p>Foster vibrant tech communities for networking and knowledge sharing</p>
+            <p> Connect
+            professionals to build their portfolios by collaborating on full-stack projects  </p>
+            <p> Support startups in building products and assembling high- <br /> performing teams</p>
+            <p> Serve as a trusted platform for talent acquisition in the tech industry</p>
         </div>
         <div>
           <div>
