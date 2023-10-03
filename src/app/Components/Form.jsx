@@ -60,7 +60,7 @@ const Forms = () => {
         method: "POST",
         body: JSON.stringify({
           name: fullname,
-          mail: "kingdavies2021@gmail.com",
+          mail: "Buildhubb01@gmail.com",
           text: `Message : ${message} \n Email: ${email} \n Fullname: ${fullname} \n Company Name: ${companyName} \n Phone Number: ${phoneNumber} \n Country: ${country} \n Employment Status: ${employmentStatus} \n Skill to Learn: ${skillToLearn}`,
           subject: " someone signed up on buildhuib waitlist ",
         }),
@@ -115,7 +115,7 @@ const Forms = () => {
 
           <label className="block  mb-2 text-black outline-none">
 
-country          </label>
+country </label>
           <select id="countries"
             className="select-field outline-none reselect focus-within:border-[#8c1ae6] py-3 rounded-md bg-[#cec7d24b]">
             <option className="">Choose a country</option>

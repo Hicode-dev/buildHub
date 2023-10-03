@@ -1,3 +1,5 @@
+'use client'
+
 import { useSpring, animated } from "@react-spring/web";
 
 const FaqCards = ({ title, icon, onClick, expanded }) => {

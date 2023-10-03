@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react';
 import SideCard from '../SIdeCard';
 import Image from 'next/image';
