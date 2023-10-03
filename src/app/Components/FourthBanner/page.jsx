@@ -1,4 +1,4 @@
-'use clients'
+'use client'
 import React, { useEffect } from "react";
 import VissionCard from "../VissionCard";
 import Carreers from "../Carreers";
