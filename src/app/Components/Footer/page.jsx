@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import {AiFillTwitterCircle, AiFillLinkedin} from 'react-icons/ai'
 import {BsFacebook} from "react-icons/bs"

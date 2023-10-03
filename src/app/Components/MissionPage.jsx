@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect } from "react";
 import SideCard from "./SIdeCard";
 import MissionCard from "./MissionCard";

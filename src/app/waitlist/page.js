@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Forms from '../Components/Form'
 const waitlist = () => {
