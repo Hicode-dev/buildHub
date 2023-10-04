@@ -12,9 +12,9 @@ const SecondPage = () => {
   }, []);
 
   return (
-    <div className="mx-auto text-center max-w-[514px]">
+    <div className="mx-auto py-8 text-center  max-w-[514px]">
       <div
-        className="w-100 h-[70vh] flex items-center justify-center flex-col"
+        className="w-100  flex items-center justify-center flex-col"
         data-aos="fade-up"
       >
         <div className="mx-auto text-center py-12 md:max-w-[514px]">
@@ -28,7 +28,7 @@ const SecondPage = () => {
 
         <div className="mx-auto text-center md:max-w-[514px]" data-aos="fade-up">
           <p className="text-[32px] md:text-[40px] text-black dark:text-white font-semibold">
-            Powerful <br /> Collaboration technic.
+            Powerful <br className="md:block none" /> Collaboration technic.
           </p>
         </div>
       </div>

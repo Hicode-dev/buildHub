@@ -9,33 +9,33 @@ const FaqPage = () => {
   const faqs = [
     {
       id: 1,
-      title: 'Question 1',
-      answer: 'Answer 1 goes here.',
+      title: 'How can I suscribe?',
+      answer: 'Join our waitlist and stay updated. Get Started',
     },
     {
       id: 2,
-      title: 'Question 2',
-      answer: 'Answer 2 goes here.',
+      title: 'What language do I need to know before applying?',
+      answer: 'It is a room for learning, you don’t necessarily need to know a particular language before applying.',
     },
     {
       id: 3,
-      title: 'Question 3',
-      answer: 'Answer 3 goes here.',
+      title: 'What is the duration for each project',
+      answer: 'Each project’s duration varies according to the complexity of the product..',
     },
     {
       id: 4,
-      title: 'Question 4',
-      answer: 'Answer 4 goes here.',
+      title: 'How can I add animations to blocks?',
+      answer: 'Most core blocks have animation supported added. You can add and change transition effects without needing any code.',
     },
     {
       id: 5,
-      title: 'Question 5',
-      answer: 'Answer 5 goes here.',
+      title: 'How many people on a team?',
+      answer: 'For efficiency and more productivity, we onboard 6 people per team, making it six designers, six frontend developers and six backend developers.',
     },
     {
       id: 6,
-      title: 'Question 6',
-      answer: 'Answer 6 goes here.',
+      title: 'What do I get on premium suscription?',
+      answer: 'On premium you get access to private mentorship, private tutor(s), physical school(s), online school, work on real-life projects, portfolio and resume build and paid internships with us.',
     },
     // Add more FAQ items as needed
   ];

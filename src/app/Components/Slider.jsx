@@ -9,7 +9,7 @@ const Testimonials = () => {
   var settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
@@ -32,7 +32,7 @@ const Testimonials = () => {
   return (
     <div className="mt-20 px-[6%] 5xl:px-[25%]">
            <div className="block lg:hidden">
-        <Slider className="grid grid-cols-1 " {...settings}>
+        <Slider className=" " {...settings}>
         <TrustedCards text="I have learnt a lot on how to manage team members since I joined Buildhubb." name="Ayomide Lekan" />
         <TrustedCards text="I have learnt a lot on how to manage team members since I joined Buildhubb." name="Ayomide Lekan" />
         <TrustedCards text="I have learnt a lot on how to manage team members since I joined Buildhubb." name="Ayomide Lekan" />

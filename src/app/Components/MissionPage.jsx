@@ -15,26 +15,28 @@ const MissionPage = () => {
   }, []);
 
   return (
-    <div>
-      <div className="grid md:flex justify-between items-center" data-aos="fade">
-        <div>
+    <div className="flex justify-center flex-col lg:px-10">
+      <div className="grid lg:flex justify-between items-center" data-aos="fade">
+        <div >
           <p className="text-gray-800 text-md" />
 
-          <h1 className="font-semibold md:text-[40px]" data-aos="fade">
+          <h1 className="font-semibold text-[40px]" data-aos="fade">
             Mission
           </h1>
           <p className="leading-[28.8px] text-[24px]x1 py-4" data-aos="fade">
             At Buildhubb, we are committed to:
           </p>
-          <p data-aos="fade-up">Empower individuals to discover their path in the tech industry</p>
+            <div>
+            <p data-aos="fade-up">Empower individuals to discover their path in the tech industry</p>
           <p data-aos="fade-up">Teach in-demand tech skills through structured learning programs</p>
           <p data-aos="fade-up">Foster vibrant tech communities for networking and knowledge sharing</p>
           <p data-aos="fade-up">Connect professionals to build their portfolios by collaborating on full-stack projects</p>
           <p data-aos="fade-up">Support startups in building products and assembling high-performing teams</p>
           <p data-aos="fade-up">Serve as a trusted platform for talent acquisition in the tech industry</p>
+            </div>
         </div>
         <div>
-          <div>
+          <div className="md:py-6 mx-auto">
             <MissionCard
               className="shadow-lg bg-white rounded-xl flex items-center p-5 my-5 w-[90%]"
               svg={

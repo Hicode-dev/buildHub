@@ -15,9 +15,9 @@ const FirstPage = () => {
   }, []);
 
   return (
-    <div className="background relative dark:bg-[#151929] dark:text-white">
+    <div className="  dark:bg-[#151929]  dark:text-white">
    
-    <div className="background relative dark:bg-[#151929] dark:text-white">
+    <div className="h-[100vh] xl:h-[100%] overflow-hidden dark:bg-[#151929] dark:text-white">
       <div className="absolute bottom-[100]">
       <Image src='/Ellipse 14 (1).png' width='600' height='600' alt="pop" />
       <div className="absolute bottom-0 ">
@@ -48,13 +48,15 @@ const FirstPage = () => {
           <Button className="bg-black text-white rounded-2xl py-2 px-5" text="Join Waitlist" data-aos="zoom-in" />
           <Button className="bg-transparent border mx-4 border-gray-800 rounded-2xl py-2 px-5" text="Learn More" data-aos="zoom-in" />
         </div>
-        <div className="w-full py-6 md:py-10  flex justify-center items-center">
+        <div className="w-full  py-6 flex  justify-center items-center">
       <iframe
+      className="rounded-lg"
         width="560"
         height="315"
         src="https://www.youtube.com/embed/srz2Wll4gmQ?si=pSnKrP7ik0DiV1Dq"
         title="YouTube video player"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>

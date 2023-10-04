@@ -15,7 +15,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="block md:flex md:px-10 py-16 items-center gap-16 md:h-[100vh]">
+    <div className="block lg:flex  md:px-10 py-16 items-center gap-16">
       <div className="grid md:grid-cols-2 w-fit gap-6 max-w-[100vw] md:max-w-[500px]">
         <VissionCard
           value="100+"
@@ -47,8 +47,8 @@ const Page = () => {
         />
       </div>
 
-      <div>
-        <div className="max-w-[514px] md:py-0 py-10">
+      <div className="pt-10">
+        <div className="max-w-[514px] md:py-0 ">
           <h2 className="font-semibold text-[32px] md:text-[40px]" data-aos="fade-right">
             Vision:
           </h2>
